@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="email=no">
+	    
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    
+	    <meta name="full-screen" content="yes">
+	    <meta name="browsermode" content="application">
+	    
+	    <meta name="x5-orientation" content="portrait">
+	    <meta name="x5-fullscreen" content="true">
+	    <meta name="x5-page-mode" content="app">
+		<meta charset="UTF-8">
+		
+		<title>首页</title>
+		<script type="text/javascript">
+			var scale = 1 / devicePixelRatio;
+				//document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+			var sizes = document.documentElement.clientWidth / 10; 
+				if(sizes > 41.4){
+					sizes = 41.4;
+				}
+				document.documentElement.style.fontSize = 16 + 'px';
+			/*document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';*/
+		</script>
+	<link href="/static/css/indexc0c2dd61068ea9cb4269.css" rel="stylesheet"></head>
+	<body>
+		<div id="app">
+		  	<router-view></router-view>
+		</div>
+	<script type="text/javascript" src="/static/js/commonc0c2dd61068ea9cb4269.js"></script><script type="text/javascript" src="/static/js/vendorsc0c2dd61068ea9cb4269.js"></script><script type="text/javascript" src="/static/js/indexc0c2dd61068ea9cb4269.js"></script></body>
+</html>

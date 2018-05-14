@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<form name="login" action="/Admin/Public/logo" method="post">
+			<input name="name" />
+			<input name="psw" />
+			<input name="btn" type="button" value="提交" />
+		</form>	
+		<script type="text/javascript" src="/Public/Admin/Js/jquery.min.js" ></script>
+		<script type="text/javascript">
+			$('[name="btn"]').click(function(){
+				var form = $('[name="login"]').serialize();
+				$.ajax({
+					type:"post",
+					url:"/Admin/Public/logo",
+					data: form,
+					async:true,
+					success: function(data){
+						console.log(data);
+					},
+					error: function(){
+						
+					}
+				});
+			})
+			
+			
+			
+		</script>
+	
+	</body>
+</html>
